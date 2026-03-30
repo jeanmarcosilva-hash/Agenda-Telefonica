@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Telefonica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <form action="">
+    <div class="containder">
+    <header>
+        <img src="./Logo Png.png" alt="imagen de agenda">
         <h1>Agenda Telefonica</h1>
-        <input type="text" required placeholder="Digite O Nome">
-        <input type="number" required placeholder="Digite o Numero">
-        <button type="submit">Adicionar</button>
+
+
+    </header>
+    <form id="contact-form">
+        <input id="name" type="text" required placeholder="Digite O Nome">
+        <input id="phone" type="number" required placeholder="Digite o Numero">
+        <input id="class-id" type="text" required placeholder="Digite a Categoria">
+        <button id="add-btn" class="Adicionar" type="submit">Adicionar</button>
+        <button id="clear-btn" class="Apagar" type="reset">Apagar</button>
     </form>
-    <table>
+    <table id="contacts-table">
         <thead>
-            <th>
-                <tr>Nome</tr>
-                <tr>Contato</tr>
-                <tr>Categoria</tr>
-            </th>
+            <tr>
+                <th>Nome</th>
+                <th>Contato</th>
+                <th>Categoria</th>
+            </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <td>-----</td>
+                <td>-----</td>
+                <td>-----</td>
+            </tr>
+        </tfoot>
     </table>
-    
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
