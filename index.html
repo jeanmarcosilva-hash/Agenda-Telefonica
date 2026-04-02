@@ -20,27 +20,30 @@
     </header>
     <form id="contact-form">
         <input id="name" type="text" required placeholder="Digite O Nome">
-        <input id="phone" type="number" required placeholder="Digite o Numero">
+        <input id="phone" type="Telefonica" required placeholder="(xx)xxxx-xxxx">
         <input id="class-id" type="text" required placeholder="Digite a Categoria">
-        <button id="add-btn" class="Adicionar" type="submit">Adicionar</button>
+        <button  class="Adicionar" type="submit">Adicionar</button>
         <button id="clear-btn" class="Apagar" type="reset">Apagar</button>
     </form>
-    <table id="contacts-table">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Contato</th>
-                <th>Categoria</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td>-----</td>
-                <td>-----</td>
-                <td>-----</td>
-            </tr>
-        </tfoot>
-    </table>
+    <table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Contato</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody class="contacts-table">
+        <!-- novas linhas serão adicionadas aqui -->
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>-----</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
     </div>
     <script src="./main.js"></script>
 </body>
